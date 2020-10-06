@@ -1,0 +1,10 @@
+<p>beers works!</p>
+
+<h2>Beers</h2>
+<ul class="beers">
+  <li *ngFor="let beer of beers">
+    <a routerLink="/beers/{{beer.id}}">
+      <span class="badge">{{beer.id}}</span> {{beer.name}} {{beer.firstBrewed}} {{beer.ibu}} {{beer.description}} {{beer.imageUrl}}
+    </a>
+  </li>
+</ul>
